@@ -20,18 +20,20 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage --coverage.reporter=text --coverage.reporter=html --coverage.reporter=json-summary"
   },
   "peerDependencies": {
     "jotai": "^2"
   },
   "devDependencies": {
     "@types/react": "^19.2.18",
+    "@vitest/coverage-v8": "^5.0.5",
     "jotai": "^2.16.0",
+    "prettier": "^3.6.2",
     "react": "^19.2.8",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.10",
-    "prettier": "^3.6.2"
+    "vitest": "^5.0.5"
   },
   "license": "MIT",
   "dependencies": {
